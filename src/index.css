@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+button,
+input[type='submit'],
+input[type='reset'] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 10px;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+a {
+  border-bottom: 1px dotted #000;
+}
+
+.solved {
+  font-size: 40px;
+  max-width: 320px;
+  text-align: center;
+  font-kerning: none;
+  letter-spacing: 0.5rem;
+  margin: 10px 0;
+}
+
+h1 {
+  color: rgb(22, 22, 22);
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: none;
+  align-items: center;
+}
+
+.flex.fill {
+  height: 100%;
+}
+
+.flex.center {
+  justify-content: center;
+}
+
+.solved {
+  font-size: 40px;
+  max-width: 320px;
+  text-align: center;
+  font-kerning: none;
+  letter-spacing: 0.5rem;
+  margin: 10px 0;
+}
