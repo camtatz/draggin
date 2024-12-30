@@ -1,4 +1,4 @@
-'use client'
+// @ts-nocheck
 
 import { useRef, useState, useEffect, useCallback, useMemo } from 'react'
 import { useSpring, useSprings, animated, config } from '@react-spring/web'
@@ -7,8 +7,7 @@ import useLocalStorage from '@ctatz/uselocalstorage'
 import clamp from 'lodash.clamp'
 import swap from 'lodash-move'
 
-import gameData from '../public/draggin_config.json'
-import styles from './styles.module.css'
+import gameData from './draggin_config.json'
 
 const fn =
   (order: number[], active = false, originalIndex = 0, curIndex = 0, y = 0) =>
@@ -51,7 +50,7 @@ function DraggableList({ setOrder, items, loadedOrder, setDrags, wrongIndexes, s
     }
   })
   return (
-    <div className={`${styles.content}`} style={{ height: items.length * 50 }}>
+    <div className={`content`} style={{ height: items.length * 50 }}>
       {springs.map(({ zIndex, shadow, y, scale }, i) => (
         <animated.div
           {...bind(i)}

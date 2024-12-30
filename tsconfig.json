@@ -5,6 +5,7 @@
     "esModuleInterop": true,
     "lib": ["dom", "es2015"],
     "plugins": [{ "name": "typescript-plugin-css-modules" }],
+    "resolveJsonModule": true,
     "jsx": "react-jsx"
   }
 }
